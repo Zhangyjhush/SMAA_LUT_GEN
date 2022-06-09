@@ -24,7 +24,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AreaMapGen.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SearchMapGen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AreaMapGen.h" />
+    <ClInclude Include="SearchMapGen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

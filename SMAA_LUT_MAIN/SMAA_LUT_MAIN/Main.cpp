@@ -1,7 +1,11 @@
 #include "DirectXTex/DirectXTex.h"
 #include <iostream>
+#include "AreaMapGen.h"
 
 int main()
 {
-	std::cout << " test \n";
+	LUT::AreaMapGen areamap;
+	areamap.Generate();
+
+	int a = 10;
 }
