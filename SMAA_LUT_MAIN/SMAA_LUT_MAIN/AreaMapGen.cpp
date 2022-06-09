@@ -47,8 +47,8 @@ namespace LUT
 	{
 		for (size_t i = 0; i < std::size(SUBSAMPLE_OFFSETS_ORTHO); ++i)
 		{
-			for(int left = 0; left <= SIZE_ORTHO; ++left)
-				for (int right = 0; right <= SIZE_ORTHO; ++right)
+			for(int left = 0; left < SIZE_ORTHO; ++left)
+				for (int right = 0; right < SIZE_ORTHO; ++right)
 				{
 					for (int pattern = 0; pattern < 16; ++pattern)
 						GenOrtho(pattern, left, right, i);
@@ -62,6 +62,10 @@ namespace LUT
 		float o1 = 0.5 + SUBSAMPLE_OFFSETS_ORTHO[offset_index];
 		float o2 = 0.5 + SUBSAMPLE_OFFSETS_ORTHO[offset_index] - 1;
 		auto pos = CalOrthoPixelPos(pattern, left, right, offset_index);
+		if (pos == 32 + 640)
+		{
+			int a = 10;
+		}
 		switch (pattern)
 		{
 		case 0:
@@ -78,7 +82,7 @@ namespace LUT
 			 */
 			if (left > right)
 			{
-				mAreaMap.pixels[pos] = 0; //R
+				mAreaMap.pixels[pos] = 0; //Rx
 				mAreaMap.pixels[pos + 1] = 0; //G
 			}
 			else
@@ -87,6 +91,29 @@ namespace LUT
 				mAreaMap.pixels[pos] = std::get<0>(pixel);
 				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
 			}
+			break;
+		case 2:
+			/**
+			* ------
+			*      |
+			*/
+			if (left >= right)
+			{
+				auto pixel = CalWight(d / 2.f, 0, d, o2, left);
+				mAreaMap.pixels[pos] = std::get<0>(pixel);
+				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			}
+			else
+			{
+				mAreaMap.pixels[pos] = 0; //Rx
+				mAreaMap.pixels[pos + 1] = 0; //G
+			}
+			break;
+		case 3:
+			/**
+			*  ------
+			*  |    |
+			*/
 			break;
 		default:
 			break;
@@ -102,18 +129,18 @@ namespace LUT
 		int row = offset * SIZE_ORTHO * 5;
 		int col = 0;
 		int cluster = pattern / 4;
-		row += cluster > 1 ? 3 * SIZE_ORTHO - 1 : 0;
-		col += cluster % 2 ? 3 * SIZE_ORTHO - 1 : 0;
+		row += cluster > 1 ? 3 * SIZE_ORTHO : 0;
+		col += cluster % 2 ? 3 * SIZE_ORTHO : 0;
 
-		row += (pattern % 4) > 1 ? SIZE_ORTHO - 1: 0;
-		col += (pattern % 4) % 2 ? SIZE_ORTHO - 1 : 0;
+		row += (pattern % 4) > 1 ? SIZE_ORTHO: 0;
+		col += (pattern % 4) % 2 ? SIZE_ORTHO : 0;
 		row += right;
 		col += left;
 
 		return row * mAreaMap.rowPitch + col * 2;
 	}
 
-	std::tuple<uint8_t, uint8_t> AreaMapGen::CalWight(float _x1, float _y1, float _x2, float _y2, float left)
+	std::tuple<float, float> AreaMapGen::CalWight(float _x1, float _y1, float _x2, float _y2, float left)
 	{
 		float dirX = _x2 - _x1;
 		float dirY = _y2 - _y1;
@@ -131,7 +158,7 @@ namespace LUT
 			{
 				float a = (py1 + py2) / 2.f;
 				auto pos_a = std::fabs(a);
-				uint8_t norm_value = std::round(pos_a * 255.f);
+				float norm_value = (pos_a * 255.f);
 				return std::make_tuple(a < 0 ? norm_value : 0, a < 0 ? 0 : norm_value);
 			}
 			// 2 triangles
@@ -145,8 +172,8 @@ namespace LUT
 				float a2 = x < _x2 ? py2 * (1 - float_part) / 2 : 0;
 				float a = std::fabs(a1) > std::fabs(a2) ? a1 : -a2;
 
-				uint8_t norm_value1 = std::round(std::fabs(a1) * 255.f);
-				uint8_t norm_value2 = std::round(std::fabs(a2) * 255.f);
+				float norm_value1 = (std::fabs(a1) * 255.f);
+				float norm_value2 = (std::fabs(a2) * 255.f);
 				return std::make_tuple(a < 0 ? norm_value1 : norm_value2, a < 0 ? norm_value2 : norm_value1);
 			}
 		}

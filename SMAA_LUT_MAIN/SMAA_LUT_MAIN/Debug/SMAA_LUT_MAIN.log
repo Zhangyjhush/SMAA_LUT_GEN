@@ -1,2 +1,75 @@
-﻿  Main.cpp
-  SMAA_LUT_MAIN.vcxproj -> C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\Debug\SMAA_LUT_MAIN.exe
+﻿  AreaMapGen.cpp
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(61,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(62,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(63,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(90,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(91,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(92,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(102,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(103,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(104,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(163,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(170,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(258): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(258): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=float,
+              _Ty=int,
+              _Other=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(878): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
+          with
+          [
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(878): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
+          with
+          [
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(265): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
+          with
+          [
+              _Ty=std::tuple<int,int>,
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<int,int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(265): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
+          with
+          [
+              _Ty=std::tuple<int,int>,
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<int,int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(392): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
+          with
+          [
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<int,int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(392): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
+          with
+          [
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<int,int>
+          ]
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(176): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
+C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(176): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
+  SMAA_LUT_MAIN.vcxproj -> C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\Debug\SMAA_LUT_MAIN.exe
