@@ -30,6 +30,27 @@ namespace LUT
 		{-0.125, 0.125}
 	};
 
+	constexpr int EDGES_DIAG[][2] =
+	{
+		{0, 0},
+		{1, 0},
+		{0, 1},
+		{1, 1},
+		{1, 0},
+		{1, 0},
+		{1, 1},
+		{1, 1},
+
+		{0, 1},
+		{1, 1},
+		{0, 1},
+		{1, 1},
+		{1, 1},
+		{1, 1},
+		{1, 1},
+		{1, 1}
+	};
+
 	class AreaMapGen
 	{
 	public:
@@ -41,9 +62,11 @@ namespace LUT
 		void Initialize() noexcept;
 		void Finalize() noexcept;
 		void GenDiag() noexcept;
+		void GenDiag(int pattern, int left, int right, int offset_index);
 		void GenOrtho() noexcept;
 		void GenOrtho(int pattern, int left, int right, int offset_index);
 		size_t CalOrthoPixelPos(int pattern, int left, int right, int offset);
+		size_t CalDiagPixelPos(int pattern, int left, int right, int offset);
 		std::tuple<float, float> CalWight(float x1, float y1, float x2, float y2, float left);
 		float Smooth(float d, float x) noexcept;
 	private:

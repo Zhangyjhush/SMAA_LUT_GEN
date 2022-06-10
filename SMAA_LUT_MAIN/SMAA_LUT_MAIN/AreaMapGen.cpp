@@ -40,7 +40,20 @@ namespace LUT
 
 	void AreaMapGen::GenDiag() noexcept
 	{
+		for (size_t i = 0; i < std::size(SUBSAMPLE_OFFSETS_DIAG); ++i)
+		{
+			for(int left = 0; left < SIZE_DIAG; ++left)
+				for (int right = 0; right < SIZE_DIAG; ++right)
+				{
+					for (int pattern = 0; pattern < 16; ++pattern)
+						GenDiag(pattern, left, right, i);
+				}
+		}
+	}
 
+	void AreaMapGen::GenDiag(int pattern, int left, int right, int offset_index)
+	{
+		auto pos = CalDiagPixelPos(pattern, left, right, offset_index);
 	}
 
 	void AreaMapGen::GenOrtho() noexcept
@@ -320,6 +333,21 @@ namespace LUT
 
 		row += (pattern % 4) > 1 ? SIZE_ORTHO: 0;
 		col += (pattern % 4) % 2 ? SIZE_ORTHO : 0;
+		row += right;
+		col += left;
+
+		return row * mAreaMap.rowPitch + col * 2;
+	}
+
+	size_t AreaMapGen::CalDiagPixelPos(int pattern, int left, int right, int offset)
+	{
+		int row = offset * SIZE_DIAG * 4;
+		int col = 5 * SIZE_ORTHO;
+
+		int cluster = pattern / 4;
+		row += cluster * SIZE_DIAG;
+		col += (pattern % 4) * SIZE_DIAG;
+
 		row += right;
 		col += left;
 
