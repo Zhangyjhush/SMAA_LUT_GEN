@@ -62,10 +62,7 @@ namespace LUT
 		float o1 = 0.5 + SUBSAMPLE_OFFSETS_ORTHO[offset_index];
 		float o2 = 0.5 + SUBSAMPLE_OFFSETS_ORTHO[offset_index] - 1;
 		auto pos = CalOrthoPixelPos(pattern, left, right, offset_index);
-		if (pos == 32 + 640)
-		{
-			int a = 10;
-		}
+
 		switch (pattern)
 		{
 		case 0:
@@ -114,6 +111,195 @@ namespace LUT
 			*  ------
 			*  |    |
 			*/
+		{
+			auto a1 = CalWight(0, o2, d / 2.f, 0, left);
+			auto a2 = CalWight(d / 2.f, 0, d, o2, left);
+			float r1 = Smooth(d, std::get<0>(a1));
+			float g1 = Smooth(d, std::get<1>(a1));
+			float r2 = Smooth(d, std::get<0>(a2));
+			float g2 = Smooth(d, std::get<1>(a2));
+			mAreaMap.pixels[pos] = r1 + r2;
+			mAreaMap.pixels[pos + 1] = g1 + g2;
+			break;
+		}
+		case 4:
+			/**
+			 * |
+			 * ------
+			 */
+			if (left <= right)
+			{
+				auto pixel = CalWight(0, o1, d / 2.f, 0, left);
+				mAreaMap.pixels[pos] = std::get<0>(pixel);
+				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			}
+			else
+			{
+				mAreaMap.pixels[pos] = 0; //Rx
+				mAreaMap.pixels[pos + 1] = 0; //G
+			}
+			break;
+		case 5:
+			/**
+			 * |
+			 * ------
+			 * |
+			 */
+			mAreaMap.pixels[pos] = 0; //Rx
+			mAreaMap.pixels[pos + 1] = 0; //G
+			break;
+		case 6:
+			/**
+			 * |
+			 * --------
+			 *        |
+			 */
+			if (std::abs(SUBSAMPLE_OFFSETS_ORTHO[offset_index]) > 0)
+			{
+				auto a1 = CalWight(0, o1, d, o2, left);
+				auto a2 = CalWight(0, o1, d /2.f, 0, left);
+				auto a3 = CalWight(d / 2, 0, d, o2, left);
+				float r1 = std::get<0>(a1);
+				float g1 = std::get<1>(a1);
+
+				float r2 = std::get<0>(a2) + std::get<0>(a3);
+				float g2 = std::get<1>(a2) + std::get<1>(a3);
+				mAreaMap.pixels[pos] = (r1 + r2) / 2.f;
+				mAreaMap.pixels[pos + 1] = (g1 + g2) / 2.f;
+			}
+			else
+			{
+				auto pixel = CalWight(0, o1, d, o2, left);
+				mAreaMap.pixels[pos] = std::get<0>(pixel);
+				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			}
+			break;
+		case 7:
+			/**
+			 * |
+			 * ------
+			 * |    |
+			 */
+		{
+			auto pixel = CalWight(0, o1, d, o2, left);
+			mAreaMap.pixels[pos] = std::get<0>(pixel);
+			mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			break;
+		}
+		case 8:
+			/**
+			 *     |
+			 * -----
+			 */
+			if (left >= right)
+			{
+				auto pixel = CalWight(d / 2.f, 0, d, o1, left);
+				mAreaMap.pixels[pos] = std::get<0>(pixel);
+				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			}
+			else
+			{
+				mAreaMap.pixels[pos] = 0; //Rx
+				mAreaMap.pixels[pos + 1] = 0; //G
+			}
+			break;
+		case 9:
+			/**
+			 *            |
+			 *  -----------
+			 *  |
+			 */
+		{
+			if (std::abs(SUBSAMPLE_OFFSETS_ORTHO[offset_index]) > 0)
+			{
+				auto a1 = CalWight(0, o2, d, o1, left);
+				auto a2 = CalWight(0, o2, d / 2.f, 0, left);
+				auto a3 = CalWight(d / 2, 0, d, o1, left);
+				float r1 = std::get<0>(a1);
+				float g1 = std::get<1>(a1);
+
+				float r2 = std::get<0>(a2) + std::get<0>(a3);
+				float g2 = std::get<1>(a2) + std::get<1>(a3);
+				mAreaMap.pixels[pos] = (r1 + r2) / 2.f;
+				mAreaMap.pixels[pos + 1] = (g1 + g2) / 2.f;
+			}
+			else
+			{
+				auto pixel = CalWight(0, o2, d, o1, left);
+				mAreaMap.pixels[pos] = std::get<0>(pixel);
+				mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			}
+			break;
+		}
+		case 10:
+			/**
+			 *        |
+			 *  -------
+			 *        |
+			 */
+			mAreaMap.pixels[pos] = 0; //Rx
+			mAreaMap.pixels[pos + 1] = 0; //G
+			break;
+		case 11:
+			/**
+			 *       |
+			 *  ------
+			 *  |    |
+			 */
+		{
+			auto pixel = CalWight(0, o2, d, o1, left);
+			mAreaMap.pixels[pos] = std::get<0>(pixel);
+			mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			break;
+		}
+		case 12:
+			/**
+			 * |        |
+			 * ----------
+			 */
+		{
+			auto a1 = CalWight(0, o1, d / 2.f, 0, left);
+			auto a2 = CalWight(d / 2.f, 0, d, o1, left);
+			float r1 = Smooth(d, std::get<0>(a1));
+			float g1 = Smooth(d, std::get<1>(a1));
+			float r2 = Smooth(d, std::get<0>(a2));
+			float g2 = Smooth(d, std::get<1>(a2));
+			mAreaMap.pixels[pos] = r1 + r2;
+			mAreaMap.pixels[pos + 1] = g1 + g2;
+			break;
+		}
+		case 13:
+			/**
+			 * |     |
+			 * -------
+			 * |
+			 */
+		{
+			auto pixel = CalWight(0, o2, d, o1, left);
+			mAreaMap.pixels[pos] = std::get<0>(pixel);
+			mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			break;
+		}
+		case 14:
+			/**
+			 * |     |
+			 * -------
+			 *       |
+			 */
+		{
+			auto pixel = CalWight(0, o1, d, o2, left);
+			mAreaMap.pixels[pos] = std::get<0>(pixel);
+			mAreaMap.pixels[pos + 1] = std::get<1>(pixel);
+			break;
+		}
+		case 15:
+			/**
+			 * |     |
+			 * -------
+			 * |     |
+			 */
+			mAreaMap.pixels[pos] = 0; //Rx
+			mAreaMap.pixels[pos + 1] = 0; //G
 			break;
 		default:
 			break;
@@ -122,7 +308,7 @@ namespace LUT
 
 	size_t AreaMapGen::CalOrthoPixelPos(int pattern, int left, int right, int offset)
 	{
-		if (pattern == 1 && offset == 0)
+		if (pattern == 1 && right == 0 && left == 0 && offset == 1)
 		{
  			int debug = 10l;
 		}
@@ -151,7 +337,7 @@ namespace LUT
 		float py1 = _y1 + (dirY / dirX) * (px1 - _x1);/* (y = k(x - x0) + b)*/
 		float py2 = _y1 + (dirY / dirX) * (px2 - _x1);
 
-		if ((px1 >= _x1 && px1 < _x2) || (px2 > _x1 || px2 <= _x2))
+		if ((px1 >= _x1 && px1 < _x2) || (px2 > _x1 && px2 <= _x2))
 		{
 			// is trapezoid
 			if ((std::copysign(1.0, py1) == std::copysign(1.0, py2)) || (std::fabs(py1) <= 1e-4 || std::fabs(py2) <= 1e-4))
@@ -181,6 +367,13 @@ namespace LUT
 		{
 			return std::make_tuple(0, 0);
 		}
+	}
+
+	float AreaMapGen::Smooth(float d, float x) noexcept
+	{
+		float x2 = std::sqrt(2 * x * 255) * 0.5;
+		float p = std::clamp(d / float(SMOOTH_MAX_DISTANCE), 0.f, 1.f);
+		return std::lerp(x2, x, p);
 	}
 
 	void AreaMapGen::Generate() noexcept

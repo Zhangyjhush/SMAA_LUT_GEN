@@ -1,15 +1,58 @@
 ﻿  AreaMapGen.cpp
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(61,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(62,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(63,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(90,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(91,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(92,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(102,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(103,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(104,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(163,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(170,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(61,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(62,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(63,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(87,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(88,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(89,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(99,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(100,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(101,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(115,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(116,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(121,30): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(122,34): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(132,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(133,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(134,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(159,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(160,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(161,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(167,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(168,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(172,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(173,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(174,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(184,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(185,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(186,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(196,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(197,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(198,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(215,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(216,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(217,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(223,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(224,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(228,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(229,39): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(230,43): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(250,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(251,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(252,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(261,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(262,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(267,30): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(268,34): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(278,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(279,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(280,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(290,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(291,38): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(292,42): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(355,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(374,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(158,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
           with
           [
               _Ty=int
@@ -18,58 +61,60 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=float
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(258): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
           with
           [
               _This=float,
               _Ty=int,
               _Other=int
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(258): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
           with
           [
               _This=float,
               _Ty=int,
               _Other=int
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(878): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(860): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
           with
           [
               _Tag=std::_Exact_args_t,
               _This2=int
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(878): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(860): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Exact_args_t,int,int,0>(_Tag,_This2 &&,int &&)' being compiled
           with
           [
               _Tag=std::_Exact_args_t,
               _This2=int
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(265): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(252): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
           with
           [
               _Ty=std::tuple<int,int>,
               _Tag=std::_Unpack_tuple_t,
               _Tpl=std::tuple<int,int>
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(265): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(252): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,_Ty,0,1,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1>)' being compiled
           with
           [
               _Ty=std::tuple<int,int>,
               _Tag=std::_Unpack_tuple_t,
               _Tpl=std::tuple<int,int>
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(392): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(379): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
           with
           [
               _Tag=std::_Unpack_tuple_t,
               _Tpl=std::tuple<int,int>
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(392): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\tuple(379): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<std::_Unpack_tuple_t,std::tuple<int,int>,0>(_Tag,_Tpl &&)' being compiled
           with
           [
               _Tag=std::_Unpack_tuple_t,
               _Tpl=std::tuple<int,int>
           ]
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(176): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
-C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(176): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
-  SMAA_LUT_MAIN.vcxproj -> C:\Users\hush\Desktop\SMAA\SMAA_LUT_GEN\SMAA_LUT_MAIN\Debug\SMAA_LUT_MAIN.exe
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(368): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
+C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\SMAA_LUT_MAIN\AreaMapGen.cpp(368): message : see reference to function template instantiation 'std::tuple<float,float>::tuple<int,int,0>(std::tuple<int,int> &&) noexcept' being compiled
+  Main.cpp
+  Generating Code...
+  SMAA_LUT_MAIN.vcxproj -> C:\Users\zhangyongjian\Desktop\SMA\SMAA_LUT_GEN\SMAA_LUT_MAIN\Debug\SMAA_LUT_MAIN.exe

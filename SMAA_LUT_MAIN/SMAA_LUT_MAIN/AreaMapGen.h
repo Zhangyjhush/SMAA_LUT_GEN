@@ -13,12 +13,12 @@ namespace LUT
 	constexpr float SUBSAMPLE_OFFSETS_ORTHO[] = 
 	{
 		0.0,
-		-0.25,
 		0.25,
-		-0.125,
+		-0.25,
 		0.125,
-		-0.375,
-		0.375 
+		-0.125,
+		0.375,
+		-0.375 
 	};
 
 	constexpr float SUBSAMPLE_OFFSETS_DIAG[][2] =
@@ -45,6 +45,7 @@ namespace LUT
 		void GenOrtho(int pattern, int left, int right, int offset_index);
 		size_t CalOrthoPixelPos(int pattern, int left, int right, int offset);
 		std::tuple<float, float> CalWight(float x1, float y1, float x2, float y2, float left);
+		float Smooth(float d, float x) noexcept;
 	private:
 		DirectX::Image mAreaMap;
 	};
